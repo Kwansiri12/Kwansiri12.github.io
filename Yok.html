@@ -3,54 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรไฟล์ของ Yok</title>
+    <title>Profile Kwansiri</title>
     <style>
         body {
-            font-family: 'Sarabun', sans-serif;
-            background-color: #f0f8ff;
-            color: #fa6ebf;
-            margin: 0;
-            padding: 0;
+            font-family: "Sarabun", sans-serif;
+            margin: 40px;
+            background-color: #fff0f5; /* พื้นชมพูอ่อน */
+            color: #333;
         }
+
+        h1 {
+            text-align: center;
+            color: #e91e63;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #d81b60;
+            border-left: 6px solid #f06292;
+            padding-left: 10px;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border: 2px solid #f8bbd0; /* กรอบชมพูอ่อน */
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #ad1457;
+        }
+
+        a {
+            color: #ec407a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            background-color: #ffe4ec;
+        }
+
         .profile-container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .profile-pic {
-            text-align: center;
-        }
-        .profile-pic img {
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            width: 170px;
-            height: 250px;
+            object-fit: cover;
+            border: 4px solid #f48fb1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        h1, h2 {
+
+        footer {
             text-align: center;
+            margin-top: 40px;
+            color: #777;
         }
-        .info {
-            margin-top: 20px;
-            line-height: 1.6;
+
+        /* ปรับให้ดูดีบนมือถือ */
+        @media (max-width: 600px) {
+            body {
+                margin: 20px;
+            }
+            .profile-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <div class="profile-pic">
-            <img src="43.jpg" alt="รูปโปรไฟล์ของ Yok">
+
+    <section id="profile">
+        <h2>ส่วนแนะนำตัว (Introduction / Profile)</h2>
+        <div class="profile-container">
+            <img src="55.jpg" alt="Profile Picture" class="profile-img">
+            <div>
+                <p><strong>ชื่อ-นามสกุล:</strong> นางสาว ขวัญศิริ สุวรรณไตร </p>
+                <p><strong>Name-Lastname:</strong> Kwansiri Suwannatrai </p>
+                <p><strong>คณะ / มหาวิทยาลัย / สาขา:</strong> คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏอุดรธานี สาขาวิทยาการคอมพิวเตอร์ </p>
+                <p><strong>ปีการศึกษา / สถานะ:</strong> นักศึกษา ปีที่ 2</p>
+                <p><strong>ความสนใจพิเศษ:</strong> เช่น .....</p>
+            </div>
         </div>
-        <h1>สวัสดี! ฉันชื่อ Yok 👋</h1>
-        <h2>นักเรียน / นักพัฒนาเว็บไซต์</h2>
-        <div class="info">
-            <p><strong>อีเมล:</strong> Kwansiri.thong15@gmail.com</p>
-            <p><strong>เบอร์โทร:</strong> 065-229-8835</p>
-            <p><strong>Intragram:</strong> <a href="https://www.instagram.com/suwzn_yy/" target="_blank">Suwzn_yy</a></p>
-            <p><strong>Profile:</strong>  <a href="https://github.com/Kwansiri12" target="_blank">Profile</a></p>
-            <p><strong>เป้าหมาย:</strong> อยากเป็นคนรวย ที่สวยน่ารัก</p>
-        </div>
-    </div>
+        <p style="margin-top:10px;">
+
+    <section id="skills">
+        <h2> ทักษะ (Skills)</h2>
+        <ul>
+            <li><strong>Soft Skills:</strong> การสื่อสาร, การทำงานเป็นทีม</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2> ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+        <ul>
+            <li>โครงการพัฒนาโปรแกรม AI Machine Learning</li>
+            <img src="56.jpg" alt="Profile Picture" class="profile-img">
+        </ul>
+
+    </section>
+
+    <section id="education">
+        <h2> การศึกษา (Education)</h2>
+        <p>คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</p>
+        <p>มหาวิทยาลัยราชภัฏอุดรธานี</p>
+        <p>2567-2568 </p>
+    </section>
+
+    <section id="activities">
+        <h2> กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+        <ul>
+            <li>ลงประกวด Ambassador ปี 2567</li>
+            <img src="58.jpg" alt="Profile Picture" class="profile-img">
+             <li>เป็นผู้นำเชียร์ 2567</li>
+             <img src="57.jpg" alt="Profile Picture" class="profile-img">
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>ติดต่อ (Contact)</h2>
+        <p>Email: <a href="Kwansiri.thong15@gmail.com">Kwansiri.thong15@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Kwansiri12" target="_blank">https://github.com/Kwansiri12</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/nongyok.nongyok.96/">https://www.facebook.com/nongyok.nongyok.96/</a></p>
+        <p>จังหวัดที่อยู่: 888 รีสอร์ทบ้านลายทอง (ซอยหน้า มอ) หมู่ 15 ถนนสามพร้าว อ.เมือง จ.อุดรธานี 41000</p>
+    </section>
+
+    <section id="career">
+        <h2>องค์ประกอบเสริม (Career Interest)</h2>
+        <p>เป้าหมายในอนาคต: คิดว่าจะเรียนต่อครูค่ะ</p>
+    
+    </section>
+
+    <footer>
+        © 2025 นักศึกษาผู้จัดทำ | Kwansiri Suwannatrai 💗
+    </footer>
+
 </body>
 </html>
